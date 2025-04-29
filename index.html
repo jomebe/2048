@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>2048</h1>
+        <div class="score-container">
+            <div class="score-box">
+                <span>점수</span>
+                <span id="score">0</span>
+            </div>
+            <div class="score-box">
+                <span>최고점수</span>
+                <span id="best-score">0</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="new-game-button">새 게임</button>
+        </div>
+        <div class="game-container">
+            <div class="grid-container" id="grid-container">
+                <!-- 동적으로 생성될 그리드 -->
+            </div>
+            <div id="game-over" class="game-message">
+                <p>게임 오버!</p>
+                <button id="try-again-button">다시 시도</button>
+            </div>
+            <div id="game-won" class="game-message">
+                <p>축하합니다! 2048을 달성했습니다!</p>
+                <div class="btn-group">
+                    <button id="keep-going-button">계속하기</button>
+                    <button id="try-new-button">새 게임</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
